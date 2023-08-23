@@ -25,8 +25,6 @@ for(let i=1; i<4; i++){
         nota = parseFloat(prompt('ERROR!!! Ingrese una nota válida entre 0 y 10\nAlumno n°'+i+'- Ingrese la nota: '));
     }
 
-    console.log(nota);
-
     let edad = parseInt(prompt('Alumno n°'+i+'- Ingrese la edad: '));
     while(Validar(18, 90, edad) == false){
         edad = parseInt(prompt('ERROR!!! Ingrese una edad válida entre 18 y 90 años\nAlumno n°'+i+'- Ingrese la edad: '));
@@ -41,6 +39,7 @@ for(let i=1; i<4; i++){
     else if(edad >= mayorEdad){
         mayorEdad = edad;
     }
+    
     sumaNotas = sumaNotas + nota;
 }
 
